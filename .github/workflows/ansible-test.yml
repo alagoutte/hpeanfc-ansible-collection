@@ -17,7 +17,7 @@ on:
     - cron: '0 6 * * *'
 env:
   NAMESPACE: arubanetworks
-  COLLECTION_NAME: aoscx 
+  COLLECTION_NAME: afc
 
 jobs:
 
