@@ -81,8 +81,11 @@ jobs:
         run: cat requirements.txt
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Build custom ansible-test image with pyafc
-        run: docker build -t ansible-test-pyafc -f Dockerfile.pyafc .
+        run: docker buildx build --load -t ansible-test-pyafc -f Dockerfile.pyafc .
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       - name: Run sanity tests
