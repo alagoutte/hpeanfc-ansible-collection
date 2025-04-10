@@ -65,6 +65,10 @@ jobs:
       - name: Install ansible-base (${{ matrix.ansible }})
         run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
 
+      # Install the head of the given branch (devel, stable-2.10)
+      - name: Install pip requirements
+        run: pip install pyafc httpx requests
+
       # OPTIONAL If your unit test requires Python libraries from other collections
       # Install them like this
       - name: Install collection dependencies
