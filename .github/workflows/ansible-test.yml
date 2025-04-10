@@ -89,7 +89,7 @@ jobs:
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       - name: Run sanity tests
-        run: ansible-test sanity -v --color --coverage --docker-image ansible-test-pyafc
+        run: ansible-test sanity -v --color --coverage --docker --docker-image ansible-test-pyafc
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       # ansible-test support producing code coverage date
