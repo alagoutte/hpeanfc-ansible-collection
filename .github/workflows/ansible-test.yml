@@ -72,7 +72,15 @@ jobs:
       # run ansible-test sanity inside of Docker.
       # The docker container has all the pinned dependencies that are required
       # and all python versions ansible supports.
-      
+
+      - name: ls
+        run: ls
+        working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
+
+      - name: cat
+        run: cat requirements.txt
+        working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
+
       - name: Run sanity tests
         run: ansible-test sanity --docker -v --color --coverage --requirements requirements.txt
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
