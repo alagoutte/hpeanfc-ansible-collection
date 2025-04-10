@@ -40,7 +40,7 @@ options:
         description: >
             Operation to be performed with the VLAN, create or delete
         type: str
-        operation:
+        choices:
             - create
             - delete
         required: true

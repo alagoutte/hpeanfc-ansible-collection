@@ -54,7 +54,7 @@ options:
                 description: >
                     Reboot specific. Partition which will be used by
                     device to reboot.
-                type: list
+                type: str
                 choices:
                     - primary
                     - secondary

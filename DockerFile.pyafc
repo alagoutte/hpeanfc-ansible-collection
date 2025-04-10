@@ -1,0 +1,4 @@
+# Dockerfile.pyafc
+FROM quay.io/ansible/ansible-runner:stable-2.12-devel
+
+RUN pip install pyafc

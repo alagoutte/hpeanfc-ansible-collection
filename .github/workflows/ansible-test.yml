@@ -81,8 +81,12 @@ jobs:
         run: cat requirements.txt
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
+      - name: Build custom ansible-test image with pyafc
+        run: docker build -t ansible-test-pyafc -f Dockerfile.pyafc .
+        working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
+
       - name: Run sanity tests
-        run: ansible-test sanity --docker -v --color --coverage --docker-extra-volume "$(pwd)/install-pyafc.sh:/root/install-pyafc.sh" --docker-command "bash /root/install-pyafc.sh && bash"
+        run: ansible-test sanity --docker -v --color --coverage --docker-image ansible-test-pyafc
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       # ansible-test support producing code coverage date
