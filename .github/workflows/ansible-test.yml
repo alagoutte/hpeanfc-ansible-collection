@@ -82,7 +82,7 @@ jobs:
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       - name: Run sanity tests
-        run: ansible-test sanity --docker -v --color --coverage --requirements requirements.txt
+        run: ansible-test sanity --docker -v --color --coverage --docker-extra-volume "$(pwd)/install-pyafc.sh:/root/install-pyafc.sh" --docker-command "bash /root/install-pyafc.sh && bash"
         working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
 
       # ansible-test support producing code coverage date
