@@ -150,8 +150,12 @@ from ansible.module_utils.basic import AnsibleModule
 from ansible_collections.arubanetworks.afc.plugins.module_utils.afc import (
     instantiate_afc_object,
 )
-from pyafc.services import radius
+try:
+    from pyafc.services import radius
 
+    HAS_PYAFC = True
+except ImportError:
+    HAS_PYAFC = False
 
 def main():
     module_args = {
