@@ -1,1 +1,1 @@
-plugins/module_utils/afc.py import:ModuleNotFoundError
+plugins/modules/afc_cli.py import-3.8:ModuleNotFoundError
