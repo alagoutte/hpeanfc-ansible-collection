@@ -153,6 +153,7 @@ from ansible_collections.arubanetworks.afc.plugins.module_utils.afc import (
 
 from pyafc.services import radius
 
+
 def main():
     module_args = {
         "afc_ip": {"type": "str", "required": True},
