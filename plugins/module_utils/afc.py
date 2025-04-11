@@ -11,12 +11,8 @@ __metaclass__ = type
 
 REQUESTS_IMP_ERR = None
 
-try:
-    from pyafc.afc import afc
+from pyafc.afc import afc
 
-    HAS_PYAFC = True
-except ImportError:
-    HAS_PYAFC = False
 
 def instantiate_afc_object(data=None):
     afc_instance = afc.Afc(data=data)
