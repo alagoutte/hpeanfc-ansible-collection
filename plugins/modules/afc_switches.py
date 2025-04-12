@@ -133,7 +133,6 @@ EXAMPLES = r"""
             switches:
                 - "10.10.10.15"
                 - "10.10.10.16"
-              boot_partition: 'active'
             fabric:
                 - "DC-Fabric"
             boot_partition: 'non-active'
