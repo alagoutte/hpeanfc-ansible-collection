@@ -127,7 +127,6 @@ EXAMPLES = r"""
         operation: "delete"
         data:
             name: Test-VLANGroup
-            name: Test
 
 -   name: Create a VLAN Group in HPE ANW Fabric Composer using token
     arubanetworks.afc.afc_vlan:
@@ -147,7 +146,6 @@ EXAMPLES = r"""
         operation: "delete"
         data:
             name: Test-VLANGroup
-            name: Test
 
 -   name: Create a Stretched VLAN in HPE ANW Fabric Composer using username
           and password
