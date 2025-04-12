@@ -42,7 +42,7 @@ EXAMPLES = r"""
 
 -   name: Capture the auth_token
     ansible.builtin.set_fact:
-        auth_token: "{{ reg_afc_instance["auth_token"] }}"
+        auth_token: "{{ reg_afc_instance['auth_token'] }}"
 
 -   name: Create Fabric using token
     arubanetworks.afc.afc_fabric:
