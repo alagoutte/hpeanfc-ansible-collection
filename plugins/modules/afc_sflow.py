@@ -131,7 +131,6 @@ EXAMPLES = r"""
         afc_ip: "10.10.10.10"
         auth_token: "xxlkjlsdfluwoeirkjlkjsldjjjlkj23423ljlkj"
         operation: "create"
-        operation: "create"
         data:
             name: Test-Sflow
             enable_sflow: false
