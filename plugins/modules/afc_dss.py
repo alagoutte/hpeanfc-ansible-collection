@@ -420,7 +420,6 @@ EXAMPLES = r"""
                 - DropICMP
                 - AllowAll
         operation: "create"
-        operation: "create"
 
 -   name: Delete policy using token
     arubanetworks.afc.afc_dss:
