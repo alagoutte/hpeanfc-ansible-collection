@@ -102,14 +102,15 @@ options:
                 description: Active Gateway to be configured.
                 type: dict
                 required: false
-                ipv4_address:
-                    description: IPv4 Address.
-                    type: str
-                    required: true
-                mac_address:
-                    description: MAC Address.
-                    type: str
-                    required: true
+                suboptions:
+                    ipv4_address:
+                        description: IPv4 Address.
+                        type: str
+                        required: true
+                    mac_address:
+                        description: MAC Address.
+                        type: str
+                        required: true
             switches:
                 description: List of Switches
                 type: list
