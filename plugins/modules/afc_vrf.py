@@ -63,7 +63,7 @@ options:
                 description: Route Distinguisher.
                 type: str
                 default: 'loopback1:1'
-                required: true
+                required: false
             max_cps_mode:
                 description: >
                     Specific to HPE ANW 10000.
