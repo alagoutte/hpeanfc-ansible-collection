@@ -147,6 +147,20 @@ author:
   - Aruba Networks (@ArubaNetworks)
 """
 
+EXAMPLES = r"""
+-   name: Configure integrations with VMware vSphere
+    arubanetworks.afc.afc_integrations:
+        afc_ip: "10.10.10.10"
+        afc_username: "afc_admin"
+        afc_password: "afc_password"
+        operation: "create"
+        data:
+            description: vm_vsphere
+            host: vcenter.example.com
+            username: administrator@vsphere.local
+            password: VMware123!
+"""
+
 from ansible.module_utils.basic import AnsibleModule
 from ansible_collections.arubanetworks.afc.plugins.module_utils.afc import (
     instantiate_afc_object,
