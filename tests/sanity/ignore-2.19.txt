@@ -208,6 +208,7 @@ plugins/modules/afc_integrations.py validate-modules:import-error
 plugins/modules/afc_ip_interface.py validate-modules:import-error
 plugins/modules/afc_lag_interfaces.py validate-modules:import-error
 plugins/modules/afc_leaf_spine.py validate-modules:import-error
+plugins/modules/afc_licenses.py validate-modules:import-error
 plugins/modules/afc_multifabrics.py validate-modules:import-error
 plugins/modules/afc_ntp.py validate-modules:import-error
 plugins/modules/afc_ospf.py validate-modules:import-error
@@ -216,6 +217,7 @@ plugins/modules/afc_physical_interfaces.py validate-modules:import-error
 plugins/modules/afc_ports.py validate-modules:import-error
 plugins/modules/afc_resource_pool.py validate-modules:import-error
 plugins/modules/afc_route_policy.py validate-modules:import-error
+plugins/modules/afc_session.py validate-modules:import-error
 plugins/modules/afc_sflow.py validate-modules:import-error
 plugins/modules/afc_snmp.py validate-modules:import-error
 plugins/modules/afc_stp.py validate-modules:import-error
