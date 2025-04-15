@@ -80,7 +80,7 @@ options:
                         required: true
                     native_vlan:
                         description: Native VLAN
-                        type: list
+                        type: int
                         required: true
                     tagged:
                         description: tagged Native VLAN
