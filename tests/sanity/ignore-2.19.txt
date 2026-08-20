@@ -1,4 +1,4 @@
- plugins/module_utils/afc.py import-3.8
+plugins/module_utils/afc.py import-3.8
 plugins/modules/afc_aaa.py import-3.8
 plugins/modules/afc_cli.py import-3.8
 plugins/modules/afc_dhcp_relay.py import-3.8
