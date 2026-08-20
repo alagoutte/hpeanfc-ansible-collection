@@ -58,4 +58,3 @@ def build_auth_data(ansible_module):
         }
     auth_data["verify"] = not params["disable_tls_verification"]
     return auth_data
-
