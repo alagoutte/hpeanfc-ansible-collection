@@ -229,6 +229,7 @@ plugins/modules/afc_discovery.py validate-modules:import-error
 plugins/modules/afc_dns.py validate-modules:import-error
 plugins/modules/afc_dss.py validate-modules:import-error
 plugins/modules/afc_evpn.py validate-modules:import-error
+plugins/modules/afc_evpn_settings.py validate-modules:import-error
 plugins/modules/afc_fabric.py validate-modules:import-error
 plugins/modules/afc_integrations.py validate-modules:import-error
 plugins/modules/afc_ip_interface.py validate-modules:import-error
@@ -241,6 +242,7 @@ plugins/modules/afc_ospf.py validate-modules:import-error
 plugins/modules/afc_overlay.py validate-modules:import-error
 plugins/modules/afc_physical_interfaces.py validate-modules:import-error
 plugins/modules/afc_ports.py validate-modules:import-error
+plugins/modules/afc_remote_file_server.py validate-modules:import-error
 plugins/modules/afc_resource_pool.py validate-modules:import-error
 plugins/modules/afc_route_policy.py validate-modules:import-error
 plugins/modules/afc_session.py validate-modules:import-error
