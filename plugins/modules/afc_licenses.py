@@ -67,7 +67,7 @@ options:
                     Required for 'delete'
                 type: str
                 required: false
-        required: true
+        required: false
 
 author: Aruba Networks (@ArubaNetworks)
 """
@@ -122,7 +122,7 @@ from ansible_collections.arubanetworks.afc.plugins.module_utils.afc import (
 def main():
     module_args = {
         **afc_argument_spec(),
-        "operation": {"type": "str", "required": True},
+        "operation": {"type": "str", "required": True, choices: ['create', 'delete']},
         "data": {"type": "dict", "required": False},
     }
 
