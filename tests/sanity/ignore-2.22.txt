@@ -169,7 +169,7 @@ plugins/modules/afc_evpn_settings.py import-3.14
 plugins/modules/afc_fabric.py import-3.14
 plugins/modules/afc_integrations.py import-3.14
 plugins/modules/afc_ip_interface.py import-3.14
-plugins/modules/afc_lag_interfaces.py import-3.8
+plugins/modules/afc_lag_interfaces.py import-3.14
 plugins/modules/afc_leaf_spine.py import-3.14
 plugins/modules/afc_multifabrics.py import-3.14
 plugins/modules/afc_ntp.py import-3.14
@@ -201,7 +201,7 @@ plugins/modules/afc_evpn_settings.py import-3.15
 plugins/modules/afc_fabric.py import-3.15
 plugins/modules/afc_integrations.py import-3.15
 plugins/modules/afc_ip_interface.py import-3.15
-plugins/modules/afc_lag_interfaces.py import-3.8
+plugins/modules/afc_lag_interfaces.py import-3.15
 plugins/modules/afc_leaf_spine.py import-3.15
 plugins/modules/afc_multifabrics.py import-3.15
 plugins/modules/afc_ntp.py import-3.15
